@@ -40,3 +40,37 @@ tsc --init
 A "tsconfig.json" is created in the project that by changing the "target" item you can change the version of js that the TS compiler generates.
 
 
+## Built-in Types
+Js has got these types:
+- number
+- string
+- boolean
+- null
+- undefined
+- object
+
+Moreover, TS introduces new types:
+- any
+- unknown
+- never
+- enum
+- tuple
+
+** As the best practice, avoid using the type "any".
+
+Tuples: It is used for fixed-length arrays in which every element has a particular type.
+```bash
+let user: [number, string] = [1, "Fateme"]
+```
+** As the best practice use tuples for key-value pairs or the arrays with two elements.
+
+Enums: It represents a list of related constants.
+```bash
+# using PascalCase
+const enum Size { Small = 1, Medium = 2, Large = 3 };
+let mySize: Size = Size.Small;
+# mySize returns 1
+```
+
+
+
